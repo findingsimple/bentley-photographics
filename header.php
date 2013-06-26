@@ -14,7 +14,7 @@
 <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
 <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/favicon.ico" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-<script src="/js/spamspan.js" type="text/javascript"></script>
+<script src="/wp-content/themes/bentley-photographics/js/spamspan.js" type="text/javascript"></script>
 
 <?php wp_head(); ?>
 
