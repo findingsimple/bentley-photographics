@@ -387,5 +387,11 @@ code {padding: 20px 0 20px 20px;display: block;}
 }
 .gform_wrapper .gform_footer {
 	padding-top:0px!important;
-
 }
+body .gform_wrapper .gform_body .gform_fields .gfield input[type=text] {
+	padding: 2px 0px 2px 2px!important;
+}
+body .gform_wrapper .gform_body .gform_fields .gfield textarea {
+        padding: 2px 0px 2px 0px!important;
+}
+
