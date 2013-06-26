@@ -1,9 +1,9 @@
 <?php 
 
-$image[0] = array("/wp-content/themes/Bentley Photographics/images/one.jpg", "Flinders Ranges");
-$image[1] = array("/wp-content/themes/Bentley Photographics/images/two.jpg", "Single Tree in Snow - Seirra Montana");
-$image[2] = array("/wp-content/themes/Bentley Photographics/images/three.jpg", "Paris 6am");
-$image[3] = array("/wp-content/themes/Bentley Photographics/images/four.jpg", "Antelope Canyon");
+$image[0] = array("/wp-content/themes/bentley-photographics/images/one.jpg", "Flinders Ranges");
+$image[1] = array("/wp-content/themes/bentley-photographics/images/two.jpg", "Single Tree in Snow - Seirra Montana");
+$image[2] = array("/wp-content/themes/bentley-photographics/images/three.jpg", "Paris 6am");
+$image[3] = array("/wp-content/themes/bentley-photographics/images/four.jpg", "Antelope Canyon");
 
 shuffle($image);
 echo $image[1][1];
