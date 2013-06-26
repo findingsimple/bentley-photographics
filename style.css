@@ -1,0 +1,391 @@
+/*
+Theme Name: Bentley Photographics
+Theme URI: http://bentleyphotographics.com/
+Description:  Bentley Photographics theme.
+Version: 0.a
+Author: Jason Conroy
+Author URI: http://findingsimple.com/
+Tags: simple
+*/
+
+@charset "utf-8";
+
+* {padding: 0px; margin: 0px;}
+
+body{margin: 0px;padding: 0px;background-color: #454343 ;font: 100% Georgia, Verdana, Arial, Helvetica, sans-serif;color: #666666; text-align: center;}
+
+/* Page Title Style */
+.PageTitle {color: #eca262;font-size: 14px;font-weight: bold;text-align: left;letter-spacing: 0.15em;padding: 0 0 10px 0;}
+h1 {color: #ffffff;font-size: 1.7em; font-weight: normal; padding: 0 0 20px 0;}
+h2 {color: #ffffff;font-size: 1.4em; font-weight: normal; padding: 0 0 10px 0;}
+h3 {color: #ffffff;font-size: 1.2em; font-weight: normal; padding: 0 0 10px 0;}
+hr.separator{height: 1px;color: #E5E5E5;background-color: #E5E5E5;border: 0px;}
+img {border: 0;}
+input,textarea,select {border: 1px solid gray; font-family: Verdana, Arial, sans-serif;color: #333333;font-size: 10pt;background-color: #ffffff;}
+input[type="checkbox"],input[type="radio"],input[type="image"] {border: 0;background-color: transparent;}
+input[type="button"],input[type="submit"]{border: 1px solid gray; font-family: Verdana, Arial, sans-serif;font-size: 10pt;background-color: #DDDDDD;}
+
+/* Your Shopping Cart Text Style */
+.ShoppingCartText{color: #ffffff;font-size: 10pt;font-weight: normal;}
+.ShoppingCartText a{color: #ffffff; text-decoration: none;}
+
+/* Required Style */
+.Required {color: #eca262;}
+
+/* Error Style */
+.Error {color: #eca262;}
+
+/* Store Closed Style */
+.StoreClosedText {color: #eca262;font-size: 16px;font-weight: bold;}
+
+/* Larger Image Text Styles */
+.LargerImageLink{color: #ffffff;font-size: 10px;text-align:center;}
+.LargerImageLink a{color: #ffffff;text-decoration:none;}
+.LargerImageLink a:hover{color: #ffffff;text-decoration:underline;}
+
+/* Copyright Text Styles */
+.CopyrightText{color: #333333;font-size: 11px;font-weight: normal;}
+.CopyrightText a{color: #333333;text-decoration: none;}
+
+/*Category Styles--------------------------*/
+
+.CategoryName {color: #eca262;font-size: 14px;font-weight: bold;letter-spacing: 0.15em;padding: 0 0 10px 0;}
+.CategoryName a{color: #eca262;text-decoration: underline;}
+.CategoryName a:hover{color: #D369A2;}
+.CategoryDescription{color: #FFFFFF;font-size: 14px;font-weight: normal;}
+
+/* Product Styles -----------------------------*/
+.ProductName{color: #ffffff;font-size: 10pt;font-weight: bold;}
+.ProductName a{color: #666666;text-decoration: none;}
+.ProductName a:hover{color: #BBBBBB;text-decoration: none;}
+.ProductDescription{color: #ffffff;font-size: 10pt;font-weight: normal;}
+.ProductPrice{color: #eca262;font-size: 10pt;font-weight: bold;}
+.ProductStockMessage{color: #eca262;font-size: 10pt;font-weight: bold;padding: 5px;}
+.ProductOptionsTitle{color: #666666;font-size: 10pt;font-weight: bold;padding: 0 0 5px 0;}
+.ProductOptions{color: #FFFFFF; font-size: 10pt; font-weight: normal;text-align: left;margin-left: 180px;padding: 5px 0 5px 0;}
+.ProductOptions input,.ProductOptions textarea,.ProductOptions select{width:100px;}
+
+/* Breadcrumb Styles ------------------------------*/
+.Breadcrumb {padding: 0;margin: 0;width: 100%;color: #333333;font-size: 11px; text-align: left;}
+.Breadcrumb a{color: #CD3C53;text-decoration: underline;}
+.Breadcrumb a:hover{color: #DA7080;}
+
+/*Navigator Bar ---------------------------------------*/
+.NavigationBar {padding: 0px;margin: 2px;width: 180px;}
+.NavigationBar table td{border-top: #E5E5E5 1px solid; border-left: #E5E5E5 1px solid;border-right: #E5E5E5 1px solid;color: #333333;font-size: 11px;font-weight: normal;text-align: left;}
+.NavigationBar table td.Empty {padding: 10px;font-weight: bold;text-align: center;}
+.NavigationBar table td.LevelDefault{padding: 1px 0px 7px 60px;}
+.NavigationBar table td.LevelDefault a{color: #333333;text-decoration: none;}
+.NavigationBar table td.LevelDefault a:hover{color: #888888;}
+.NavigationBar table td.Level1{padding: 1px 0px 7px 20px;font-weight: bold;}
+.NavigationBar table td.Level1 a{color: #333333;text-decoration: none;}
+.NavigationBar table td.Level1 a:hover{color: #888888;}
+.NavigationBar table td.Level2{padding: 1px 0px 7px 40px;}
+.NavigationBar table td.Level2 a{color: #333333;text-decoration: none;}
+.NavigationBar table td.Level2 a:hover{color: #888888;}
+.NavigationBar table td.Selected{background-color: #E5E5E5;}
+.NavigationBar table td.Selected a{color: #eca262;text-decoration: none;}
+.NavigationBar table td.Selected a:hover{color: #D369A2;
+}
+
+/* Subcategories ------------------------------------------*/
+.Subcategories{padding: 0px;margin: 2px;width: 100%;vertical-align: top;text-align: center;}
+/* the following styles are inherited from .CategoryName */
+.Subcategories .CategoryName{padding: 2px;}
+.Subcategories .CategoryName a{}
+.Subcategories .CategoryName a:hover{}
+
+/*Product List ------------------------------------------------*/
+.ProductList{width: 100%;vertical-align: top;}
+.ProductList table td{vertical-align: top;}
+.ProductList .Empty{padding: 30px 0px 40px 0px;color: #eca262;font-size: 14px;font-weight: bold;text-align: center;}
+/* the following styles are inherited from Category Styles */
+.ProductList .CategoryName{}
+.CategoryDescription{padding-top: 5px;padding-bottom: 10px;}
+/* the following styles are inherited from Product Styles */
+.ProductList .ProductName{padding-top: 7px;padding-bottom: 0px;text-align: center;}
+.ProductList .ProductPrice{padding: 5px 5px 10px 5px;text-align: center;}
+.ProductList .ProductPrice{padding: 5px 5px 20px 5px;text-align: center;}
+
+/*Paginator Dropdown -----------------------------------------*/
+.PaginatorDropdown {padding: 0;margin: 0;width: 100%;color: #FFFFFF;font-size: 14px; text-align: left;}
+.PaginatorDropdown select{
+}
+
+/*Paginator Styles -------------------------------------------*/
+.Paginator {padding: 10px 0 10px 0;margin: 0;width: 100%;color: #FFFFFF;font-size: 14px; text-align: right;}
+.Paginator a{color: #CD3C53;text-decoration: underline;}
+.Paginator a:hover{color: #DA7080;text-decoration: underline;}
+
+/*Product Images ------------------------------------------------*/
+.ProductImages {padding: 0px;margin: 2px;width: 100%;border: 1px #E5E5E5 solid;font-size: 12px;color: #666666;font-weight: normal;text-align: left;}
+.ProductImages TH{padding: 2px;background-color: #E5E5E5;}
+.ProductImages IMG{padding: 10px;border: 2px solid #FFFFFF;}
+.ProductImages IMG:hover{padding: 10px;border: 2px solid #E5E5E5;}
+
+/*Related Products ------------------------------------------------*/
+.RelatedProducts {padding: 0px;margin: 2px;width: 100%;border: 1px #E5E5E5 solid;font-size: 12px;color: #666666;font-weight: normal;text-align: left;}
+.RelatedProducts TH{padding: 2px;background-color: #E5E5E5;}
+.RelatedProducts IMG{padding: 10px;border: 2px solid #FFFFFF;}
+.RelatedProducts IMG:hover{padding: 10px;border: 2px solid #E5E5E5;}
+.RelatedProducts A{font-size: 11px;color: #666666;font-weight: normal;text-decoration: none;}
+.RelatedProducts A:hover{font-size: 11px;color: #666666;font-weight: normal;text-decoration: underline;}
+
+/*Product Info---------------------------------------------------*/
+.ProductInfo {padding: 0px;margin: 2px;width: 100%;font-size: 10pt;color: #ffffff;font-weight: normal;text-align: left;}
+/* the following styles are inherited from Product Styles */
+.ProductInfo .ProductName {padding: 6px 0 6px 0;}
+.ProductInfo .ProductDescription {}
+.ProductInfo .ProductPrice {padding-bottom: 7px;}
+
+/*Shopping Cart -------------------------------------------------*/
+.ShoppingCart {padding: 10px;background-color: #333333;color: #ffffff;font-size: 10pt;font-weight: normal;text-decoration: none;}
+.ShoppingCart .Empty{padding: 30px 0px 40px 0px;color: #eca262;font-size: 10pt;font-weight: bold;text-align: center;}
+.ShoppingCart input{}
+
+/* Search ----------------------------------------------------------*/
+.result {padding: 10px 0 10px 0;}
+.result .ProductName, .result .ProductDescription {font-size: 10pt;}
+.SearchResult {padding: 0px;margin: 2px;width: 100%;}
+.SearchResult .Empty{padding: 30px 0px 40px 0px;text-align: left;color: #ffffff;font-size: 12px;font-weight: bold;}
+.Empty ul{padding: 0 0 0 30px;margin: 0;}
+.SearchResult .Highight {background-color: #666666;}
+.SearchResult .ProductName {padding: 0px;padding-bottom: 5px;text-align: left;}
+/* the following styles are inherited from Product Styles */
+.SearchResult .ProductName a{color: #ffffff;}
+.SearchResult .ProductName a:hover{color: #ffffff;}
+.SearchResult .ProductDescription {}
+.SearchResult .ProductDescription a {color: #ffffff;text-decoration: none;}
+.SearchResult .ProductDescription a:hover {color: #ffffff;}
+.SearchResult .ProductNumber {color: #ffffff;font-size: 14px;font-weight: bold;}
+
+/*Checkout */
+.Checkout {padding: 0px;margin: 2px;width: 100%;color: #FFFFFF;font-size: 14px;font-weight: normal;text-decoration: none;}
+.Checkout .Title {padding: 12px 0px 5px 0;color: #eca262;font-size: 12px;font-weight: bold; text-align:left;}
+.Checkout .Block {padding: 15px;border: 1px #E5E5E5 solid;}
+.Checkout .ColumnTitle {white-space: nowrap;color: #666666;font-weight: bold;}
+.Checkout .ColumnValue {}
+.Checkout .TotalLabel {white-space: nowrap;padding-right: 7px;font-weight: bold;}
+.Checkout .TotalValue {font-weight: bold;}
+.Checkout .Left {text-align:left;}
+.Checkout .Right {text-align:right;}
+.Checkout .Center {text-align:center;}
+.Checkout input.Normal,.Checkout textarea.Normal,.Checkout select.Normal {}
+.Checkout input.Error ,.Checkout textarea.Error,.Checkout select.Error {border: 1px solid #eca262;}
+.Checkout select.Short {width: 100px;}
+.Checkout .Required {}
+.Checkout .Error {}
+.Checkout .Errors {padding: 15px;color: #eca262;text-align: left;line-height: 20px;}
+.Checkout .Empty {padding: 30px 0px 40px 0px;color: #eca262;font-size: 14px;font-weight: bold;text-align: center;}
+.Checkout .ImpossibleToComputeShippingCost {padding: 20px;color: #eca262;font-size: 12px;font-weight: bold;text-align: center;}
+.Checkout a{color: #FFFFFF;font-size: 12px;}
+
+/*Order Styles ----------------------------*/
+.OrderInfo {font-size: 10pt;}
+.OrderInfo .field {font-weight: bold;color: #666666;text-align: left;}
+.OrderInfo .value {color: #FFFFFF;text-align: left;}
+.OrderInfo .products_header {color: #FFFFFF;font-size: 10pt;font-weight: bold;}
+.OrderInfo .group_header {color: #FFFFFF;text-decoration: underline;font-size: 10pt;font-weight: bold;padding: 10px 0 10px 0;}
+.OrderInvoice {color: #FFFFFF;font-size: 10pt;}
+.OrderInvoice .field {font-weight: bold;color: #666666;text-align: left;}
+.OrderInvoice .value {color: #FFFFFF;text-align: left;}
+.OrderInvoice .group_header {color: #FFFFFF;text-decoration: underline;font-size: 10pt;font-weight: bold;padding: 0 0 10px 0;}
+.OrderInvoice .price_field {font-weight: normal;text-align: right;color: #FFFFFF;}
+.OrderInvoice .price_value {font-weight: bold;color: #FFFFFF;text-align: left;}
+
+#everything {width: 890px;background: #222222;margin: 0 auto;text-align: left;}
+#content {clear: both;}
+#main {margin: 0 ; padding: 15px 15px 15px 15px;overflow:hidden;color: #FFFFFF;}
+#cart_status {padding: 15px 20px 15px 0px;}
+#footer {clear:both;text-align:center;padding: 10px;font-size: 10px;}
+
+#message_box_outer {padding: 0; margin:0 0 20px 0;}
+#message_box_inner {border: solid 1px #E5E5E5; padding: 6px;}
+.error_message {color: #eca262;}
+#menu ul li {display: inline;list-style:none;}
+#menu {padding-left: 25px;letter-spacing: 0.15em;line-height: 80px;font-size:12px;height: 80px;overflow:hidden;float:right;width: 460px;text-align:right;}
+#menu ul{padding: 0px;margin: 0px;}
+#menu a{color:#FFFFFF;text-decoration:none;padding: 0px;margin: 0 20px 0 0;}
+#menu a:hover {color:#FFFFFF;text-decoration:underline;margin: 0 20px 0 0;padding: 0px;}
+#menu a.menu_selected {text-decoration:underline;}
+
+.ProductList img, .ProductInfo img, .ShoppingCart img{border:#666666 solid 5px;}
+.ProductList img:hover, .ProductInfo img:hover, .ShoppingCart img:hover{border:#ffffff solid 5px;}
+img.magnifier, img:hover.magnifier {border:none;}
+.ProductOptions {}
+.ProductOptions2 {clear:both;text-align:right;vertical-align:top;padding-top: 20px;padding-bottom: 20px;}
+.ProductOptions2 a {color:#FFFFFF;text-decoration:none;font-weight:bold;padding: 5px;}
+.ProductOptions2 a:hover {color:#FFFFFF;text-decoration:underline;font-weight:bold;background:#666666;padding: 5px;}
+.ProductImage {float:left;}
+.ProductInfo .ProductDescription, .ProductInfo .ProductPrice, .cart_item .ProductName, .cart_item .ProductNumbers, .cart_item .ProductOptions, .cart_item .ProductLinks ,.ProductTitle{margin-left: 180px;}
+.returntocat a, 
+.cart_options a{color:#FFFFFF;text-decoration:none;font-size:12px;padding-right: 10px;}
+.returntocat a:hover, .cart_options a:hover {color:#FFFFFF;text-decoration:underline;font-size:12px;padding-right: 10px;}
+.cart_title {}
+.cart_items {clear:both;}
+.cart_item {clear:both;padding-top: 30px;}
+.cart_item p{line-height: 1.4em;}
+.cart_item .ProductName{line-height: 1.6em;}
+.cart_totals {float:right;}
+.cart_prices {text-align:right;clear:both;}
+.promo_form {}
+.cart_options {padding-top: 10px;}
+.ProductLinks {padding-top:5px;}
+.ProductLinks a{color:#eca262;text-decoration:none;font-weight:normal;}
+.ProductLinks a:hover{color:#eca262;text-decoration:underline;font-weight:normal;}
+#page_content, #product {background: #333333;padding: 10px;}
+#customer-detail {padding-bottom: 5px;}
+.customer-welcome {text-align:left;}
+.customer-search-by-id-form {}
+.customer-search-form {}
+.customer-order-quantities {}
+.customer-order-status {padding-bottom:10px;}
+.customer-settings {}
+.customer-detail {}
+.customer-signout {text-align:right;float:right;}
+.customer-order-status ul,.customer-settings ul{list-style:none;}
+.customer-search-form,.customer-search-by-id-form,.customer-order-status,.customer-settings,.personal-info-group {padding: 10px 0 10px 0;}
+.customer-order-quantities td,.customer-search-form td {width: 25%;}
+.customer-order-quantities table,.customer-search-form table,.customer-search-by-id-form table {width: 100%;}
+.customer-search-by-id-form td {width: 33%;}
+.button {margin: 20px 0 0 0;}
+
+#account-nav {padding: 10px 0 0 0;}
+#account-nav a,#account-nav a:hover{font-weight: normal;}
+
+
+/*Signin Form -----------------------------------------*/
+#signin {font-size: 14px;}
+.block {height: 170px;}
+#signin a{color:#FFFFFF;text-decoration:none;font-weight:bold;}
+#signin a:hover{color:#FFFFFF;text-decoration:underline;font-weight:bold;}
+#signin ul{padding-left:20px;}
+#signin label{display:block;}
+#signin_left {padding: 10px 0 10px 0;float:left;width: 250px;}
+#signin_left ul li{padding: 0 0 5px 0;}
+#signin_right {padding: 10px 0 10px 0;margin-left:310px;width:250px;}
+#signin_right form{padding-bottom: 10px;}
+#signin_right label{padding-top: 5px;}
+#signin-submit {margin-top: 10px;}
+
+
+/*Header ---------------------------------------------- */
+#header {width:380px;height:80px;}
+#header p {display:none;}
+#header a {border:none;}
+
+/*Banner Image ------------------------------------------------- */
+#banner-wrap{padding-left: 15px;margin:0 0 20px 0;}
+#banner {width: 860px;margin:0;padding:0;}
+#banner .mainimage {display: block;border:#666666 solid 5px;margin:0;padding:0;}
+
+/*Page Content ---------------------------------------- */
+#page_content {font-size: 10pt; color: #999999;}
+#page_content h3 {clear: both;margin-top: 30px;}
+#page_content p.no-orders {padding: 15px 0 15px 0;text-align: center;}
+#page_content a.Buy-Now {color: #eca262;}
+#page_content a:hover.Buy-Now {text-decoration:underline;}
+#page_content .post h2 a{color:#ffffff;}
+#page_content .post h2 a:hover{color:#eca262;}
+#page_content p {padding: 0 0 10px 0;}
+#page_content ol {padding: 0 0 10px 40px;}
+#page_content a {color: #eca262;font-weight: normal;text-decoration: none;}
+#page_content a:hover {color: #eca262;font-weight: normal;text-decoration: underline;}
+#page_content ul {margin:0; padding:0;}
+#page_content ul li {margin: 0 0 10px 15px;list-style:disc;}
+.alignright {float:right;}
+.alignleft {float:left;}
+.entry img {border: 5px solid #666666;}
+
+/*Latest Entries ---------------------------------------- */
+#latest-entries ul {list-style:none;margin:0;padding:0;}
+#latest-entries ul li{padding:10px 0 0 0; margin: 0 0 10px 0; clear:both;list-style:none;}
+.the_date {display:block;text-align: center;float:left;font-family: Arial, Helvetica, sans-serif;background: url(images/date.gif) no-repeat;width:60px;margin-right: 20px;}
+.date_m {display:block;font-size: .9em;margin:0;padding:0;font-weight: bold;text-align:center;color: #ffffff;}
+.date_d {display:block;font-size:1.4em;margin:0;padding:0.7em 0 1em 0;text-align: center;color: #666666;}
+
+/*Contact Form ---------------------------------------- */
+#contact-form {width:230px; float:right;}
+#sidebar.contact-form-side {width:230px;}
+
+/*Sidebar ---------------------------------------- */
+#sidebar {width: 230px;float:right;padding: 15px 10px 15px 10px;overflow:hidden;margin-right:15px;font-size:12px;}
+#sidebar ul {margin:0;padding:0;list-style: none;}
+#sidebar ul li{margin:5px 0 5px 0;padding:0;list-style: none;}
+#sidebar h2 {text-decoration: none;margin: 0 0 10px 0;padding: 0;font-size: 14px;font-weight: normal;}
+#sidebar .widget {margin:0 0 15px 0;padding:0;}
+#sidebar ul li.recentcomments,#sidebar #archives ul li{margin:5px 0 5px 15px;padding:0;list-style: disc;}
+#sidebar a {color:#eca262; text-decoration:none; font-weight:normal;}
+#sidebar a:hover {color:#eca262; text-decoration:underline; font-weight:normal;}
+
+
+/*Sidebar Nav --------------------------------------*/
+#sidebar #nav ul{padding:0;margin:0;}
+#sidebar #nav ul li {list-style:none;width: 230px;}
+#sidebar #nav {padding: 0 0 20px 0;}
+#sidebar #nav a{color:#666666;text-decoration:none;display: block;padding: 5px;font-size: 12px;letter-spacing: 0.15em;}
+#sidebar #nav a:hover {color:#FFFFFF;text-decoration:none;display: block;background:#666666;padding: 5px;font-size: 12px;letter-spacing: 0.15em;}
+.nav_title {padding-bottom: 10px;font-weight:bold;}
+#sidebar #nav a.nav_selected {color:#FFFFFF;}
+.textwidget #nav {padding-bottom:5px!important;}
+
+/*Sidebar About Prints ------------------------------*/
+#sidebar #about-prints {font-size: 12px;}
+#sidebar #about-prints p.about-title {font-family: Tahoma,Verdana;letter-spacing: 0.15em;padding-bottom: 10px;}
+#sidebar #about-prints ul{padding:0 0 0 15px;margin:0;list-style-type: disc;list-style-position: outside;}
+#sidebar #about-prints ul li{padding:0;margin:0 0 10px 0;list-style-type: disc;}
+#sidebar #about-prints a{color: #666666;text-decoration: underline;}
+#sidebar #about-prints a:hover{color: #ffffff;text-decoration: underline;}
+.emphasise {font-style:italic;}
+
+/*Design Footer -------------------------------------*/
+a.design{color: #666666;}
+a:hover.design{color: #ffffff;}
+
+/*Blog unsorted -------------------------------------*/
+.time , .post-calendar{color: #CCCCCC;margin: 0;padding: 5px 0 5px 20px; display:block; background: transparent url(images/date-small.gif) no-repeat scroll left center;}
+.time:hover, .post-calendar:hover {color: #aaaaaa;}
+.time {color: #CCCCCC;margin: 0;padding: 5px 0 5px 20px; display:block; background: transparent url(images/date-small.gif) no-repeat scroll left center;}
+.time:hover{color: #aaaaaa;}
+.tags {background: transparent url(images/tags.gif) no-repeat scroll left center;padding-left: 20px;}
+.post-info {margin-top:20px;}
+code {padding: 20px 0 20px 20px;display: block;}
+.post {padding: 0 0 20px 0;}
+.clear{clear:both;}
+
+/* comments.
+--------------------------------------------- */
+
+#comment {width: 97%;}
+.commentlist li, #commentform input, #commentform textarea {}
+.commentlist li {font-weight: bold;}
+.commentlist li .avatar { float: right;border: 1px solid #666666;padding: 2px;background: #666666;}
+.commentlist cite, .commentlist cite a {font-weight: bold;font-style: normal;font-size: 1.1em;}
+.commentlist p {font-weight: normal;line-height: 1.5em;text-transform: none;}
+#commentform p {}
+.commentmetadata {font-weight: normal;}
+	
+/* post navigation--------------------------------------------- */
+.navigation {display: block;text-align: center;margin-top: 10px;margin-bottom: 30px;padding-bottom: 5px;}
+
+/*gform*/
+.gform_wrapper {
+	position:relative!important;
+	top:-26px!important;
+}
+.gform_wrapper .top_label .gfield_label {
+	font:14px!important;
+	font-weight:normal!important;
+	color:#ffffff!important;
+}
+
+.gform_wrapper .gfield_required {
+	color:#eca262!important;
+}
+.gform_wrapper .button {
+	margin-top:0px;
+}
+.gform_wrapper .gform_footer {
+	padding-top:0px!important;
+
+}
