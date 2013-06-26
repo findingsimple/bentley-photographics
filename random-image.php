@@ -6,7 +6,7 @@ $image[2] = array("/wp-content/themes/bentley-photographics/images/three.jpg", "
 $image[3] = array("/wp-content/themes/bentley-photographics/images/four.jpg", "Antelope Canyon");
 
 shuffle($image);
-echo $image[1][1];
-echo('<img src="' . $image[1][0] . '" alt="' . $image[1][1] . '" title="' . $image[1][1] . '" />');
+//echo $image[1][1];
+echo('<img class="mainimage" src="' . $image[1][0] . '" alt="' . $image[1][1] . '" title="' . $image[1][1] . '" />');
 
 ?>
